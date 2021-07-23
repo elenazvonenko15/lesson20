@@ -9,21 +9,23 @@
         .accordion-wrap {
             max-width: 700px;
             margin: 0 auto;
+            font-family: Arial;
         }
-        .accordion-title {
+        .accordion-item .accordion-title {
             padding: 20px 10px;
-            border: 1px solid #000;
+            border: 1px solid #ccc;
             font-weight: 600;
             cursor: pointer;
             position: relative;
             margin-top: 5px;
         }
-        .accordion-content {
+        .accordion-item .accordion-content {
             padding: 20px;
             border: 1px solid #ccc;
+            background-color: rgba(86, 185, 234, .1);
             display: none;
         }
-        .accordion-title:before,  .accordion-title:after{
+        .accordion-item .accordion-title:before, .accordion-item .accordion-title:after{
             position: absolute;
             content: '';
             display: block;
@@ -36,12 +38,12 @@
             right: 40px;
             top: 20px;
         }
-        .accordion-title:before {
+        .accordion-item .accordion-title:before {
             -webkit-transform: rotate(90deg);
             -ms-transform: rotate(90deg);
             transform: rotate(90deg);
         }
-        .active .accordion-title:after {
+        .accordion-item.active .accordion-title:after {
             -webkit-transform: rotate(90deg);
             -ms-transform: rotate(90deg);
             transform: rotate(90deg);
